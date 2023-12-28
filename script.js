@@ -99,12 +99,10 @@ const amountFormate = (amount) => {
 }
 
 
-
 // ------------------- Store data in localstorage -------------------
 const saveToLocalStorage = () => {
     localStorage.setItem('budgetData', JSON.stringify({ income, expence }));
 };
-
 
 
 // ------------------- create budget list -------------------
