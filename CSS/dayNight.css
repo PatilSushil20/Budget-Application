@@ -1,0 +1,45 @@
+body.active {
+    background-color: rgb(23, 20, 20);
+}
+
+body.active form {
+    border: 1px solid white;
+}
+
+body.active form button {
+    color: black;
+    background-color: white;
+}
+
+
+body.active>h1 {
+    color: white;
+}
+
+body.active section>div {
+    color: white;
+    font-weight: 500;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+body.active .showCase strong {
+    color: white;
+}
+
+body.active .showCase aside ul li {
+    box-shadow: 1px 1px 4px 1px white;
+    color: white;
+}
+
+body.active .showCase span:nth-child(3) {
+    color: black;
+    background-color: white;
+}
+
+body.active .showCase span:nth-child(3):hover {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}

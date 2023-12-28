@@ -1,0 +1,85 @@
+:root {
+    --border-radius: 7px;
+    --btn-width: 80px;
+}
+
+@media (width<=768px) {
+
+    body>button {
+        border-radius: var(--border-radius);
+        width: var(--btn-width);
+    }
+
+    body {
+        padding: 0 36px;
+    }
+
+    form {
+        width: 100%;
+        margin-top: 3rem;
+        border-radius: var(--border-radius);
+        min-width: 0;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    section>div {
+        width: 100%;
+        margin: 12px 0;
+        border-radius: var(--border-radius);
+        height: 70px;
+    }
+
+    body h1 {
+        margin: 7rem 0 0px;
+    }
+
+    form input,
+    form select {
+        margin: 12px 0;
+        border-radius: var(--border-radius);
+    }
+
+    form button {
+        padding: 6px 6px;
+        border-radius: var(--border-radius);
+        width: 80px;
+    }
+
+
+    .showCase aside ul li {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 23px;
+        box-shadow: 1px 2px 3px 1px black;
+        margin: 12px 0;
+        width: 100%;
+        border-radius: var(--border-radius);
+    }
+
+
+    .showCase {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .leftSide {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    .rightSide {
+        margin-left: 0;
+        width: 100%;
+        text-align: left;
+    }
+}

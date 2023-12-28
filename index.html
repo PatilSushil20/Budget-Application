@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/dayNight.css">
+    <link rel="stylesheet" href="/CSS/responsive.css">
+    <title>Budget-app</title>
+</head>
+
+<body>
+    <h1>Budget App</h1>
+    <button id="toggleBtn" onclick="toggleDayNight()">Night</button>
+    <form>
+        <input type="Title" placeholder="Enter Title" id="title">
+        <input type="number" placeholder="Enter Amount" id="amount">
+        <select id="type">
+            <option value="income">Income</option>
+            <option value="expence">Expence</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <section>
+        <div>
+            <strong>
+                Total<br> Income
+            </strong>
+            <span id="tIncome">
+                <span>₹ 0</span>
+            </span>
+        </div>
+        <div>
+            <strong>
+                Total<br>Expence
+            </strong>
+            <span id="tExpence">
+                <span>₹ 0</span>
+            </span>
+        </div>
+        <div>
+            <strong>
+                Total<br> Savings
+            </strong>
+            <span id="tSaving">
+                <span>₹ 0</span>
+            </span>
+        </div>
+    </section>
+    <section class="showCase">
+        <aside class="leftSide">
+            <strong>Income</strong>
+            <ul id="displayIncome">
+                <!-- <li>
+                    <span>Shoe</span>
+                    <span>4000</span>
+                    <span>X</span>
+                </li> -->
+            </ul>
+        </aside>
+        <aside class="rightSide">
+            <strong>Expence</strong>
+            <ul id="displayExpence">
+                <!-- <li>
+                    <span>Shoe</span>
+                    <span>4000</span>
+                    <span>X</span>
+                </li> -->
+            </ul>
+        </aside>
+
+    </section>
+
+
+    <script src="script.js"></script>
+    <script src="dayNight.js"></script>
+</body>
+
+</html>
